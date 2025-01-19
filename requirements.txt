@@ -1,0 +1,51 @@
+# ML and Viz, SWE
+# TODO(Adriano) please switch to conda so that we can manage conda directories
+# and make sure to set the conda directory carefully and properly to be able to deal
+# with the different compute sources we'll be using.
+transformers[torch]
+huggingface_hub
+bitsandbytes
+trl
+circuitsvis==1.41.0
+datasets==2.19.1
+einops==0.7.0
+evaluate==0.4.2
+fancy-einsum
+pydantic-yaml
+editdistance
+multiprocess
+jaxtyping==0.2.29
+numpy==1.26.4
+plotly==5.22.0
+pydantic==2.7.2
+pytest==8.2.1
+pyyaml
+pandas
+nltk
+watchdog
+tabulate
+kaleido
+scikit-learn
+peft
+tiktoken
+tensorboardX
+streamlit
+requests==2.32.2
+# sae-lens # Does not support latest pytorch?
+torch==2.4.1 # latest
+transformer-lens
+# Jupyter
+jupyterlab==4.2.1
+notebook==7.2.0
+ipywidgets==8.1.3
+ipython[all]
+click==8.1.7
+# Dependencies for cloud storage (etc...)
+zipnn==0.3.6
+# Formatting, linting, typechecking, etc..
+black==24.4.2
+# ...
+# Model APIs
+litellm
+anthropic
+openai
