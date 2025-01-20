@@ -1,4 +1,4 @@
-# Hardened-MixLoRA: protecting LLM-based applications' instructions with a privilege-controlled mixture of low rank experts
+# Scoped-MixLoRA: protecting LLM-based applications' instructions with a privilege-controlled mixture of low rank experts
 
 Based on [MixLORA](https://arxiv.org/html/2404.15159v1) with influence from [AdapterSwap](https://arxiv.org/abs/2404.08417) and [Instruction Hierarchy](https://arxiv.org/abs/2404.13208)
 <div align="left"><img src="https://raw.githubusercontent.com/TUDB-Labs/MixLoRA/main/assets/MixLoRA.png" width=60%"></div>
