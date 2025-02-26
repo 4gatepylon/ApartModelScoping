@@ -3,4 +3,4 @@
 #SBATCH --gres=gpu:a100:1
 #SBATCH --mem=40G
 
-python fine-tuning.py
+python fine-tuning-2.py
