@@ -27,7 +27,6 @@ tabulate
 kaleido
 scikit-learn
 peft
-tiktoken
 tensorboardX
 streamlit
 requests==2.32.2
