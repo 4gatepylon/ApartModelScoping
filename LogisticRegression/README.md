@@ -1,6 +1,11 @@
 Owner: 4gate (https://github.com/4gatepylon)
 Date last updated: Noon 2024-01-19
 
+XXX 2024-03-04 What we should do:
+- Biology vs. everything
+- Classify using from latent space at all layers and at all tokens using logistic regression...
+
+
 The idea of this experiment is pretty straightforward: we are going to just perform some logistic regression on our models to see if we can classify based on task, especially if we are out of the "desired" task. If this works then we are in a strong position. We try the following versions from most simple/easy to least:
 1. Simply preform logistic regression on the hidden states (i.e. regular linear probing). We are scanning layers and using a small dataset that we choose a random split for and do cross-validation on (we might do 10-fold or 5-fold depending on whether our dataset is reasonably-sized or very small)
     - Result: not super successful on a tiny dataset, also it takes ar eally long time to generate a dataset.
@@ -28,5 +33,7 @@ The classes we mainly care about, which may overlap are:
 - `physics` (camel.ai)
 - `leetcode` (tbd)
 - `shopping` (tbd)
+- `cipher` (basically we want to include wierd text that is OOD in some sense)
+(Ideally LATER we could also measure if this is robust to adversarial attacks)
 
 Each one we will train as a BINARY classification problem.
